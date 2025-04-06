@@ -1,0 +1,27 @@
+// from loadDB.ts
+import fetch from 'node-fetch';
+/**
+ * Get a text embedding from the Hugging Face Inference API.
+ * @param text The text to embed.
+ * @returns A promise that resolves to a number array (the embedding vector).
+ */
+const getEmbedding = async (text: string): Promise<number[]> => {
+    const response = await fetch(
+        'https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2',
+        {
+          method: 'POST',
+          headers: {
+            "Authorization": `Bearer ${HUGGINGFACE_API_KEY}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ inputs: text })
+        }
+      );
+      if (!response.ok) {
+        const error = await response.text();
+        throw new Error(`Error fetching embedding: ${error}`);
+      }
+      const data = await response.json();
+      // For sentence-transformers models, the output is an array of embeddings; we return the first one.
+      return data[0];
+    };
