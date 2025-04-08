@@ -1,4 +1,5 @@
 import { DataAPIClient } from '@datastax/astra-db-ts';
+
 import { PuppeteerWebBaseLoader } from "@langchain/community/document_loaders/web/puppeteer";
 import { HuggingFaceInferenceEmbeddings } from "@langchain/community/embeddings/hf";
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
