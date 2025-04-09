@@ -2,8 +2,6 @@
 
 This project is an AI-powered chatbot that answers questions about Formula 1 using natural language processing and a fine-tuned transformer model. Built with Next.js and integrated with Hugging Face Inference API, it delivers fast, context-aware responses about races, drivers, stats, and more.
 
-![F1 Logo](./public/f1logo.png)
-
 ## 🚀 Features
 
 - 🤖 Chatbot interface powered by `@ai-sdk/react` (or custom hooks)
@@ -18,18 +16,30 @@ This project is an AI-powered chatbot that answers questions about Formula 1 usi
 
 - **Frontend:** React + Next.js 14
 - **Backend:** API Routes (Edge/Server)
-- **AI Model:** Hugging Face Inference API (`flan-t5-large` or similar)
+- **AI Model:** Hugging Face Inference API (`flan-t5-large`)
 - **Chat Hook:** a custom `useChat` hook
   
 
 ---
-## 🧑‍💻 Setup Instructions
+## ⚙️ Setup Instructions
 
-1\. **Clone the repo**
+To run this project locally, follow these steps:
 
-   ```bash
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/f1-chatbot.git
+cd f1-chatbot
 
-   git clone https://github.com/your-username/f1-chatbot.git
+# 2. Install dependencies
+npm install
+
+# 3. Set up environment variables
+# Create a .env.local file and add your Hugging Face API key
+echo "HUGGINGFACE_API_KEY=your_key_here" > .env.local
+
+# 4. Run the development server
+npm run dev
+```
 
 ## 📌 To-Do
 
