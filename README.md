@@ -14,7 +14,7 @@ This project is an AI-powered chatbot that answers questions about Formula 1 usi
 
 ## 📦 Tech Stack
 
-- **Frontend:** React + Next.js 14
+- **Frontend:** React + Next.js 15
 - **Backend:** API Routes (Edge/Server)
 - **AI Model:** Hugging Face Inference API (`flan-t5-large`)
 - **Chat Hook:** a custom `useChat` hook
