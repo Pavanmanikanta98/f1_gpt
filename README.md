@@ -31,77 +31,15 @@ This project is an AI-powered chatbot that answers questions about Formula 1 usi
 
    git clone https://github.com/your-username/f1-chatbot.git
 
-   cd f1-chatbot
-\## 🧑‍💻 Setup Instructions
+## 📌 To-Do
 
-1\\. \*\*Clone the repo\*\*
+- [ ] Add full prompt-tuning for F1 context  
+- [ ] Integrate with live F1 APIs for real-time standings  
+- [ ] Add streaming support for longer responses  
+- [ ] Deploy on Vercel  
 
-   \`\`\`bash
+---
 
-   git clone https://github.com/your-username/f1-chatbot.git
-
-   cd f1-chatbot
-
-Install dependencies
-
-bash
-
-Copy
-
-Edit
-
-npm install
-
-Configure environment
-
-Create a .env.local file and add your Hugging Face token:
-
-env
-
-Copy
-
-Edit
-
-HUGGINGFACE\_API\_KEY=your\_huggingface\_token
-
-Run the development server
-
-bash
-
-Copy
-
-Edit
-
-npm run dev
-
-Access the app
-
-Visit http://localhost:3000 in your browser.
-
-🛠️ Model Configuration
-
-🧪 Example Prompt
-
-text
-
-Copy
-
-Edit
-
-Q: Who is the head of racing for Aston Martin?
-
-A: The head of racing for Aston Martin is...
-
-📌 To-Do
-
- Add full prompt-tuning for F1 context
-
- Integrate with live F1 APIs for real-time standings
-
- Add streaming support for longer responses
-
- Deploy on Vercel
-
-📄 License
+## 📄 License
 
 MIT License. Free to use and modify.
