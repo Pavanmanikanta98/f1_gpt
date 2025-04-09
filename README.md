@@ -7,9 +7,9 @@ This project is an AI-powered chatbot that answers questions about Formula 1 usi
 ## 🚀 Features
 
 - 🤖 Chatbot interface powered by `@ai-sdk/react` (or custom hooks)
-- 🧠 Uses Hugging Face models (`flan-t5-large`, `llama`, etc.) via their Inference API
+- 🧠 Uses Hugging Face model (`flan-t5-large`) via their Inference API
 - 🗃️ Dynamic backend API using Next.js API routes
-- ⚙️ Model can be swapped, tuned, or fine-tuned for better F1 performance
+- ⚙️ Model can be swapped, tuned for better F1 performance
 - 🌐 Real-time Q&A about Formula 1 teams, drivers, history, and standings
 
 ---
@@ -19,8 +19,8 @@ This project is an AI-powered chatbot that answers questions about Formula 1 usi
 - **Frontend:** React + Next.js 14
 - **Backend:** API Routes (Edge/Server)
 - **AI Model:** Hugging Face Inference API (`flan-t5-large` or similar)
-- **Chat Hook:** `@ai-sdk/react` or a custom `useChat` hook
-- **Styling:** TailwindCSS (or custom CSS)
+- **Chat Hook:** a custom `useChat` hook
+  
 
 ---
 ## 🧑‍💻 Setup Instructions
