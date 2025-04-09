@@ -5,11 +5,15 @@ import f1logo from './assets/f1logo.png';
 
 // import {useChat} from "ai/react"
 
-import { useChat } from '@ai-sdk/react';
+// import { useChat } from '@ai-sdk/react';
+// import { useChat } from '@ai-sdk/react';
+import { useChat } from './lib/useChat';
+
 import { Message } from 'ai';
 import { PromptSuggestionRow } from './components/PromptSuggestionRow';
 import { LoadingBubble } from './components/LoadingBubble';
 import  { Bubble }  from './components/Bubble';
+import { useEffect } from 'react';
 
 const Home = () => {
   const handlePromptClick = (prompt: string) => {
@@ -31,6 +35,13 @@ const Home = () => {
 
   const noMessages = !messages || messages.length === 0;
 
+  useEffect(() => {
+    console.log("All messages:", messages);
+  }, [messages]);
+
+ 
+  
+
   return (
     <main>
       <Image src={f1logo} width="250" alt="logo" />
@@ -45,9 +56,13 @@ const Home = () => {
           </>
         ) : (
           <>
-            {messages.map((message, index) => (
+            {/* {messages.map((message, index) => (
               <Bubble key={`message-${index}`} message={message} />
-            ))}
+            ))} */}
+            {messages.map((message) => (
+  <Bubble key={message.id} message={message} />
+))}
+
             {isLoading && <LoadingBubble />}
           </>
         )}

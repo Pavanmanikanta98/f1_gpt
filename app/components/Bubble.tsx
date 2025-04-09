@@ -1,4 +1,12 @@
 export const Bubble = ({ message }) => {
-    const { content, role } = message;
-    return <div className={`bubble ${role}`}>{content}</div>;
-  };
+  const isUser = message.role === "user";
+
+  // Get the message text safely
+  const text = message.parts?.[0]?.text || message.content;
+
+  return (
+    <div className={`bubble ${isUser ? "user" : "assistant"}`}>
+      <p>{text}</p>
+    </div>
+  );
+};
