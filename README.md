@@ -32,6 +32,15 @@ This project is an AI-powered chatbot that answers questions about Formula 1 usi
    git clone https://github.com/your-username/f1-chatbot.git
 
    cd f1-chatbot
+\## 🧑‍💻 Setup Instructions
+
+1\\. \*\*Clone the repo\*\*
+
+   \`\`\`bash
+
+   git clone https://github.com/your-username/f1-chatbot.git
+
+   cd f1-chatbot
 
 Install dependencies
 
@@ -53,7 +62,7 @@ Copy
 
 Edit
 
-HUGGINGFACE_API_KEY=your_huggingface_token
+HUGGINGFACE\_API\_KEY=your\_huggingface\_token
 
 Run the development server
 
@@ -70,34 +79,6 @@ Access the app
 Visit http://localhost:3000 in your browser.
 
 🛠️ Model Configuration
-
-The chatbot uses the Hugging Face textGeneration method with configurable parameters in app/api/chat/route.ts.
-
-Example settings:
-
-ts
-
-Copy
-
-Edit
-
-parameters: {
-
-  max_new_tokens: 100,
-
-  temperature: 0.7,
-
-  repetition_penalty: 1.1,
-
-}
-
-You can replace the model with:
-
-google/flan-t5-large
-
-meta-llama/Llama-3-8B
-
-tiiuae/falcon-7b or any other supported model on 🤗 Hugging Face.
 
 🧪 Example Prompt
 
